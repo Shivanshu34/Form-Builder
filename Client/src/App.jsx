@@ -10,6 +10,8 @@ export default function App() {
         <Route path="/" element={<EditorPage />} />
         <Route path="/preview/:shareId" element={<PreviewPage />} />
         <Route path="/fill/:shareId" element={<FillPage />} />
+
+        <Route path="*" element={<EditorPage />} />
       </Routes>
     </BrowserRouter>
   );
